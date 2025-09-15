@@ -235327,10 +235327,11 @@
                 {
                   "type": "string",
                   "name": "bypass_mode",
-                  "description": "<p>When the specified actor can bypass the ruleset. <code>pull_request</code> means that an actor can only bypass rules on pull requests. <code>pull_request</code> is not applicable for the <code>DeployKey</code> actor type. Also, <code>pull_request</code> is only applicable to branch rulesets.</p>",
+                  "description": "<p>When the specified actor can bypass the ruleset. <code>pull_request</code> means that an actor can only bypass rules on pull requests. <code>pull_request</code> is not applicable for the <code>DeployKey</code> actor type. Also, <code>pull_request</code> is only applicable to branch rulesets. When <code>bypass_mode</code> is <code>exempt</code>, rules will not be run for that actor and a bypass audit entry will not be created.</p>",
                   "enum": [
                     "always",
-                    "pull_request"
+                    "pull_request",
+                    "exempt"
                   ],
                   "default": "always"
                 }
@@ -235343,7 +235344,8 @@
               "enum": [
                 "always",
                 "pull_requests_only",
-                "never"
+                "never",
+                "exempt"
               ]
             },
             {
@@ -236432,10 +236434,11 @@
                 {
                   "type": "string",
                   "name": "bypass_mode",
-                  "description": "<p>When the specified actor can bypass the ruleset. <code>pull_request</code> means that an actor can only bypass rules on pull requests. <code>pull_request</code> is not applicable for the <code>DeployKey</code> actor type. Also, <code>pull_request</code> is only applicable to branch rulesets.</p>",
+                  "description": "<p>When the specified actor can bypass the ruleset. <code>pull_request</code> means that an actor can only bypass rules on pull requests. <code>pull_request</code> is not applicable for the <code>DeployKey</code> actor type. Also, <code>pull_request</code> is only applicable to branch rulesets. When <code>bypass_mode</code> is <code>exempt</code>, rules will not be run for that actor and a bypass audit entry will not be created.</p>",
                   "enum": [
                     "always",
-                    "pull_request"
+                    "pull_request",
+                    "exempt"
                   ],
                   "default": "always"
                 }
@@ -236448,7 +236451,8 @@
               "enum": [
                 "always",
                 "pull_requests_only",
-                "never"
+                "never",
+                "exempt"
               ]
             },
             {
@@ -237537,10 +237541,11 @@
                 {
                   "type": "string",
                   "name": "bypass_mode",
-                  "description": "<p>When the specified actor can bypass the ruleset. <code>pull_request</code> means that an actor can only bypass rules on pull requests. <code>pull_request</code> is not applicable for the <code>DeployKey</code> actor type. Also, <code>pull_request</code> is only applicable to branch rulesets.</p>",
+                  "description": "<p>When the specified actor can bypass the ruleset. <code>pull_request</code> means that an actor can only bypass rules on pull requests. <code>pull_request</code> is not applicable for the <code>DeployKey</code> actor type. Also, <code>pull_request</code> is only applicable to branch rulesets. When <code>bypass_mode</code> is <code>exempt</code>, rules will not be run for that actor and a bypass audit entry will not be created.</p>",
                   "enum": [
                     "always",
-                    "pull_request"
+                    "pull_request",
+                    "exempt"
                   ],
                   "default": "always"
                 }
@@ -237553,7 +237558,8 @@
               "enum": [
                 "always",
                 "pull_requests_only",
-                "never"
+                "never",
+                "exempt"
               ]
             },
             {
